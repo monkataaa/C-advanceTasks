@@ -11,18 +11,22 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            var stack = new Stack<char>();
             var input = Console.ReadLine();
+            var stack = new Stack<int>();
 
-
-            foreach (var item in input)
+            for (int i = 0; i < input.Length; i++)
             {
-                stack.Push(item);
-            }
+                char ch = input[i];
+                if (ch == '(')
+                {
+                    stack.Push(i);
+                } else if (ch == ')')
+                {
+                    int startIndex = stack.Pop();
+                    string content = input.Substring(startIndex, i - startIndex + 1) ;
+                    Console.WriteLine(content);
 
-            while (stack.Count != 0)
-            {
-                Console.Write(stack.Pop());
+                }
             }
 
         }

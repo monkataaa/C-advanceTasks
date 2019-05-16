@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Stacks and Queues"
+    "\\Stacks and Queues",
+    "\\Stacks and Queues\\3. Simple Calculator",
+    "\\Stacks and Queues\\4. Matching_Brackets"
   ],
-  "SelectedNode": "\\Stacks and Queues\\1. Reverse Strings",
+  "SelectedNode": "\\Stacks and Queues\\4. Matching_Brackets\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
